@@ -1,6 +1,5 @@
 # Hosts file for Ansible
 ---
 
-[test]
 #Ubuntu test 1
 192.168.2.136
