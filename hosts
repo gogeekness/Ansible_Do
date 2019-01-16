@@ -1,10 +1,10 @@
 # Hosts file for Ansible
 
 #Ubuntu test 1
-[webserver]
+[standby]
 192.168.2.136
 
-[standby]
+[webserver]
 192.168.2.148
 
 # C0r3.9000
