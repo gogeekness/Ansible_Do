@@ -1,9 +1,9 @@
 ---
 
 - hosts: webserver
-  remote_user: root
+  remote_user: rdeseke
   become: yes
-  #become_method: sudo
+  become_method: sudo
   tasks:
     - name: install pip
       apt: name=python-pip state=present
