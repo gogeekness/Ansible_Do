@@ -1,0 +1,8 @@
+---
+my_packages:
+  - lnav
+  - sysstat
+  - htop
+  - wget
+  - joe
+...

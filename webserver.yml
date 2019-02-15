@@ -25,3 +25,4 @@
 
     - name: Check if container is running
       shell: docker psgit pull
+
