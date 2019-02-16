@@ -1,6 +1,6 @@
 ---
 - name: My first playbook 1
-  hosts: all
+  hosts: test
   roles:
     - ./Ansible_Do/tasks/main.yml
 ...
