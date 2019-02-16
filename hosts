@@ -4,7 +4,7 @@
 localhost ansible_connection=local
 
 #Ubuntu test 1
-[test:childern]
+[test:children]
 ana
 una
 
