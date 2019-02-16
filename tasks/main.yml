@@ -13,5 +13,5 @@
   with_items:
     - emacs
 
--import_tasks: ricahrd_e.yml
+-import_tasks: ~/Ansible_Do/tasks/ricahrd_e.yml
 ...
