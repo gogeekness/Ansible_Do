@@ -1,0 +1,6 @@
+---
+  name: My first playbook 1
+  hosts: all
+  roles:
+    - ./tasks/main.yml
+...
