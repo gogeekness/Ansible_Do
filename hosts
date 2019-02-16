@@ -1,8 +1,15 @@
 # Hosts file for Ansible
 
+[local]
+localhost ansible_connection=local
+
 #Ubuntu test 1
-[standby]
+[test:childern]
+ana
+una
+
+[ana]
 192.168.2.136
 
-[webserver]
+[una]
 192.168.2.148
