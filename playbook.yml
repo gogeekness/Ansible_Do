@@ -3,7 +3,7 @@
   hosts: test
   tasks:
   - name: echo something
-    shell: echo $(ip addr)
+    shell: echo cat /etc/hosts
   roles:
     - ./tasks/main.yml
 ...
