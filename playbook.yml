@@ -4,6 +4,6 @@
   tasks:
   - name: echo something
     shell: echo $(ip addr | grep inet)
- roles:
+  roles:
     - ./roles/tasks/main.yml
 ...
