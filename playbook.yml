@@ -1,6 +1,9 @@
 ---
 - name: My first playbook 1
   hosts: test
+  tasks:
+  - name: echo something
+    shell: echo $(ip addr)
   roles:
     - ./tasks/main.yml
 ...
