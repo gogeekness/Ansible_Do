@@ -5,6 +5,5 @@
   - name: echo something
     shell: echo $(ip addr | grep inet)
   roles:
-    - ./roles/task
-    s/main.yml
+    - ./roles/tasks/main.yml
 ...
