@@ -3,7 +3,7 @@
   hosts: test
 
   roles:
-    - ./roles/tasks/main.yml
+    - common
 
   tasks:
   - name: echo something
