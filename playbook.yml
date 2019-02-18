@@ -1,9 +1,12 @@
 ---
 - name: My first playbook 1
   hosts: test
+
+  roles:
+    - ./roles/tasks/main.yml
+
   tasks:
   - name: echo something
     shell: echo $(ip addr | grep inet)
-  roles:
-    - ./roles/tasks/main.yml
 ...
+
