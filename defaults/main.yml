@@ -5,4 +5,7 @@ my_packages:
   - htop
   - wget
   - joe
+
+my_removes:
+  - emacs
 ...

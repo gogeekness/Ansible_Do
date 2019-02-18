@@ -11,7 +11,7 @@
     name: "{{ item }}"
     state absent
   with_items:
-    - emacs
+    - "{{ my_removes }}"
 
 - import_tasks: ./roles/common/tasks/ricahrd_e.yml
 ...
