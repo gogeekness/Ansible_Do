@@ -3,8 +3,7 @@
   hosts: test
   become: yes
   become_user: root
-  become_meathod: su
-     --extra-vars='ansible_become_pass=H1t0m120!'
+  become_meathod: su --extra-vars='ansible_become_pass=H1t0m120!'
 
 
 
