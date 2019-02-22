@@ -2,7 +2,7 @@
 - name: My first playbook 1
   hosts: test
 
-  remote_user: root
+  remote_user: rdeseke
   become: yes
   vars:
     ansible_become_pass: "H1t0m120!"
