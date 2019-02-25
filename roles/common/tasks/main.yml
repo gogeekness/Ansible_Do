@@ -1,4 +1,11 @@
 ---
+- include_vars: vars_and_stuff.yml
+
+  remote_user: rdeseke
+  become: yes
+  vars:
+    ansible_become_pass: "H1t0m120!"
+
 - name: Install our packages
   package:
     name: "{{ item }}"
