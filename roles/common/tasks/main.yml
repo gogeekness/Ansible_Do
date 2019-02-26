@@ -3,7 +3,7 @@
   - vars_and_stuff.yml
 
 - name: Print vars_and_stuff.yml
-    debug:
+  debug:
     var: My_password
 
   remote_user: rdeseke
