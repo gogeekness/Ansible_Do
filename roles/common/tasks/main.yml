@@ -4,7 +4,6 @@
     name: My_password
 
 - name: Become super-rdeseke
-  remote_user: rdeseke
   become: yes
   vars:
     ansible_become_pass: "{{ My_password }}"
