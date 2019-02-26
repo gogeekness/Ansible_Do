@@ -2,15 +2,15 @@
 - name: My first playbook 1
   hosts: test
 
+  include_vars:
+    file: vars_and_stuff.yml
+    name: My_password
+
   roles:
     - common
 
   tasks:
   - name: echo something
     shell: echo $(ip addr | grep inet)
-
-
-
-
 ...
 
