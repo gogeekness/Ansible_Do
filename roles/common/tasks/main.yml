@@ -3,9 +3,9 @@
     file: vars_and_stuff.yml
     name: My_password
 
-#- name: Print vars_and_stuff.yml
-#  debug:
-#    var: My_password
+- name: Print vars_and_stuff.yml
+  debug:
+    var: My_password
 
   remote_user: rdeseke
   become: yes
