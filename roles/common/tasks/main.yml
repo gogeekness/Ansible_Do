@@ -4,7 +4,7 @@
 
 - name: Print vars_and_stuff.yml
     debug:
-    var: something
+    var: My_password
 
   remote_user: rdeseke
   become: yes
