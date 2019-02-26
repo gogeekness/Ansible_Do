@@ -1,5 +1,6 @@
 ---
-- include_vars: vars_and_stuff.yml
+- include_vars:
+  - vars_and_stuff.yml
 
 
 - name: Print vars_and_stuff.yml
