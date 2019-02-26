@@ -6,11 +6,10 @@
 - name: Become rdeseke
 #  debug:
 #    var: My_password
-
-  remote_user: rdeseke
-  become: yes
-  vars:
-    ansible_become_pass: "{{ My_password }}"
+    remote_user: rdeseke
+    become: yes
+    vars:
+      ansible_become_pass: "{{ My_password }}"
 
 - name: Install our packages
   package:
