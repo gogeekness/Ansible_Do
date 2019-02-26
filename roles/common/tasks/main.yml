@@ -1,6 +1,7 @@
 ---
 - include_vars:
-  - vars_and_stuff.yml
+    file: vars_and_stuff.yml
+    name: My_password
 
 
 - name: Print vars_and_stuff.yml
