@@ -1,5 +1,5 @@
 ---
-- vars_files:
+  vars_files:
   - vars_and_stuff.yml
 
 - name: Print vars_and_stuff.yml
