@@ -4,7 +4,7 @@
   remote_user: rdeseke
   become: yes
   vars:
-    ansible_become_pass: "H1t0m120!"
+    vault_ansible_become_pass: My_password
 
 - name: Install our packages
   package:
