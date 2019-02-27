@@ -1,6 +1,6 @@
 ---
-- name: My first playbook 1
-  hosts: test
+# My first playbook 1
+- hosts: test
 
   include_vars:
     file: vars_and_stuff.yml
