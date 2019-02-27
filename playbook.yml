@@ -2,10 +2,7 @@
 # My first playbook 1
 - hosts: test
 
-  include_vars:
-    file: vars_and_stuff.yml
-    name: My_password
-
+- name: Go to common role to run tasks.
   roles:
     - common
 
