@@ -1,11 +1,11 @@
 ---
-- include_vars:
-  file: vars_and_stuff.yml
-  name: My_password
+- name: Bring varible from vault
+  include_vars:
+    file: vars_and_stuff.yml
+    name: My_password
 
 - name: Become super-rdeseke
   become: yes
-
   vars:
     ansible_become_pass: "{{ My_password }}"
 
