@@ -5,6 +5,9 @@
     file: vars_and_stuff.yml
     name: My_password
 
+- name: tester
+    shell: echo $(w)
+
 - name: Become super-rdeseke
   become: yes
   vars:
