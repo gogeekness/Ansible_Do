@@ -1,28 +1,28 @@
+# Common/tasks file
 ---
-- name: Bring varible from vault
-  include_vars:
+#- name: Bring varible from vault
+-  include_vars:
     file: vars_and_stuff.yml
     name: My_password
 
-  tasks:
-  - name: Become super-rdeseke
-    become: yes
-    vars:
-      ansible_become_pass: "{{ My_password }}"
+- name: Become super-rdeseke
+  become: yes
+  vars:
+    ansible_become_pass: "{{ My_password }}"
 
-  - name: Install our packages
-    package:
-      name: "{{ item }}"
-      state: present
-    with_items:
-      - "{{ my_packages }}"
+- name: Install our packages
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ my_packages }}"
 
-  - name: Remove packages
-    package:
-      name: "{{ item }}"
-      state: absent
-    with_items:
-      - "{{ my_removes }}"
+- name: Remove packages
+  package:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - "{{ my_removes }}"
 
-  - import_tasks: ./roles/common/tasks/ricahrd_e.yml
+- import_tasks: ./roles/common/tasks/ricahrd_e.yml
 ...
