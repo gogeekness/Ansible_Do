@@ -6,7 +6,8 @@
     name: My_password
 
 - name: tester
-    shell: echo $(w)
+
+  shell: echo $(w)
 
 - name: Become super-rdeseke
   become: yes
