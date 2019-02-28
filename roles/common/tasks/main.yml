@@ -9,7 +9,7 @@
   shell: echo $(w)
 
 - name: Super rdeseke
-  become: yes
+  become : yes
   vars:
     ansible_become_pass: "{{ My_password }}"
 
