@@ -1,7 +1,7 @@
 # Common/tasks file
 ---
-- name: Bring varible from vault
-  include_vars:
+# name: Bring varible from vault
+- include_vars:
     file: vars_and_stuff.yml
     name: My_password
 
