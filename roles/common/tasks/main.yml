@@ -5,6 +5,11 @@
     file: vars_and_stuff.yml
     name: My_password
 
+- name: Super Richard
+  become: yes
+  vars:
+    ansible_become_pass: "{{ My_password }}"
+
 - name: tester
   shell: echo $(w)
 
