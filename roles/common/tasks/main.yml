@@ -7,25 +7,26 @@
 
 - name: tester
   shell: echo $(w)
-
-- name: Super rdeseke
-  become : yes
-  vars:
-    ansible_become_pass: "{{ My_password }}"
-
-- name: Install our packages
-  package:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - "{{ my_packages }}"
-
-- name: Remove packages
-  package:
-    name: "{{ item }}"
-    state: absent
-  with_items:
-    - "{{ my_removes }}"
-
-- import_tasks: ./roles/common/tasks/ricahrd_e.yml
 ...
+
+#- name: Super rdeseke
+#  become : yes
+#  vars:
+#    ansible_become_pass: "{{ My_password }}"
+#
+#- name: Install our packages
+#  package:
+#    name: "{{ item }}"
+#    state: present
+#  with_items:
+#    - "{{ my_packages }}"
+#
+#- name: Remove packages
+#  package:
+#    name: "{{ item }}"
+#    state: absent
+#  with_items:
+#    - "{{ my_removes }}"
+#
+#- import_tasks: ./roles/common/tasks/ricahrd_e.yml
+#...
