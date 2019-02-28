@@ -7,6 +7,9 @@
 
 - name: tester
   shell: echo $(w)
+
+
+- import_tasks: ./roles/common/tasks/ricahrd_e.yml
 ...
 
 #- name: Super rdeseke
