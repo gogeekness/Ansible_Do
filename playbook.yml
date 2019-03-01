@@ -2,6 +2,11 @@
 # My first playbook 1
 - hosts: test
 
+- name: Bring variable from vault
+  include_vars:
+    file: vars_and_stuff.yml
+    name: My_password
+
 - name: Super Richard
   become: yes
   vars:

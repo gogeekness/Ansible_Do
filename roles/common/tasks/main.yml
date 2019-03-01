@@ -1,9 +1,5 @@
 # Common/tasks file
 ---
-- name: Bring variable from vault
-  include_vars:
-    file: vars_and_stuff.yml
-    name: My_password
 
 - name: Install our packages
   package:
