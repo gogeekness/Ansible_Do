@@ -1,9 +1,8 @@
 ---
 # My first playbook 1
 - hosts: test
-
   vars_files:
-    - ./roles/common/vars/vars_and_stuff.yml
+    - My_password: ./roles/common/vars/vars_and_stuff.yml
 
 - name: Super Richard
   become: yes
