@@ -9,7 +9,7 @@
   vars:
     ansible_become_pass: "{{ My_password }}"
 
-- name: Go to common role to run tasks.
+
   roles:
     - common
 
