@@ -3,7 +3,7 @@
 - hosts: test
 
   vars_files:
-    - vars_and_stuff.yml
+    - ./roles/common/vars/vars_and_stuff.yml
 
 - name: Super Richard
   become: yes
