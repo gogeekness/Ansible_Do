@@ -2,8 +2,7 @@
 # My first playbook 1
 - hosts: test
 
-  vars_files
-  :
+  vars_files:
     - vars_and_stuff.yml
 
 - name: Super Richard
