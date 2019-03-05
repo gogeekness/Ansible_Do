@@ -1,6 +1,6 @@
 ---
 # My first playbook 1
-- hosts: test
+- hosts: ana
   become: yes
 
   vars_files:
@@ -9,9 +9,9 @@
   vars:
     ansible_become_pass: "{{ My_password }}"
 
-
   roles:
-    - common
+    #- common
+    - web_server
 
   tasks:
   - name: echo something
