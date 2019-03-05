@@ -10,7 +10,7 @@
     ansible_become_pass: "{{ My_password }}"
 
   roles:
-    #- common
+    - common
     - webserver
 
   tasks:
