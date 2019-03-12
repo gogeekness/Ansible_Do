@@ -2,7 +2,7 @@
 ---
 
 - debug:
-    msg: "Docker password {{ Docker_password }} ."
+    msg: "Docker password {{ Docker_password }} Password {{ My_password }}."
 
 - name: Log into DockerHub
   docker_login:
