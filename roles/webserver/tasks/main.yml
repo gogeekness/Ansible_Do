@@ -1,8 +1,10 @@
 # webserver/tasks file
 ---
 
-- debug:
-    msg: "Docker password {{ Docker_password }}."
+- name: Log into DockerHub
+  docker_login:
+    username: rdeseke
+    password: {{ Docker_password }}
 
 - name: install pip
   apt: name=python-pip state=present
