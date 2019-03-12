@@ -3,11 +3,14 @@
 - hosts: ana
   become: yes
 
+  serial: 1  # allow the targets system to execute the tasks indiveduly
+
   vars_files:
   - ./roles/common/vars/vars_and_stuff.yml
 
   vars:
     ansible_become_pass: "{{ My_password }}"
+
 
   roles:
     - common
