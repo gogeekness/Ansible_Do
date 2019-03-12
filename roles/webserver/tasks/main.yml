@@ -8,6 +8,7 @@
   docker_login:
     username: rdeseke
     password: "{{ Docker_password }}"
+    reauthorize: yes
 
 
 - name: install pip
