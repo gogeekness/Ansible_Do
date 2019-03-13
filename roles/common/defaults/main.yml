@@ -5,6 +5,8 @@ my_packages:
   - htop
   - wget
   - joe
+  - docker
+  - docker-compose
 
 my_removes:
   - emacs
