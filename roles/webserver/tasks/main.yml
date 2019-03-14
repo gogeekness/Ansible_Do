@@ -4,18 +4,18 @@
 - debug:
     msg: "Docker password {{ Docker_password }} Password {{ My_password }}."
 
+- name: install pip
+  apt: name=python-pip state=present
+
+- name: install docker-py package
+  pip:  name=docker-py
+
 - name: Log into DockerHub
   docker_login:
     username: rdeseke
     password: "{{ Docker_password }}"
     reauthorize: yes
 
-
-- name: install pip
-  apt: name=python-pip state=present
-
-- name: install docker-py package
-  pip:  name=docker-py
 
 - name: Build docker image from Dockerfile
   docker_image:
