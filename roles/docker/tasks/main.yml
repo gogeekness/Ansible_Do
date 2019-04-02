@@ -1,0 +1,5 @@
+# Docker/tasks (main) file
+---
+  - name: pull
+    docker_image:
+      name: ubuntu

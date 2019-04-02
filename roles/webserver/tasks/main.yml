@@ -7,8 +7,8 @@
 - name: install pip
   apt: name=python-pip state=present
 
-- name: install docker-py package
-  pip:  name=docker-py
+- name: install docker package
+  pip:  name=docker
 
 - name: Log into DockerHub
   docker_login:
