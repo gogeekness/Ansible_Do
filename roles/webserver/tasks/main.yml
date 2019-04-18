@@ -7,8 +7,14 @@
 - name: install pip
   apt: name=python-pip state=present
 
+# docker-py ?
+
 - name: install docker package
   pip:  name=docker
+
+
+- name: Is user in group 'docker'
+
 
 - name: Log into DockerHub
   docker_login:

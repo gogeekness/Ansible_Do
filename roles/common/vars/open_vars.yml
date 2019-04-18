@@ -1,0 +1,6 @@
+# General varibles for ansible.
+Open Varibles:
+---
+user: |
+  rdeseke
+...
