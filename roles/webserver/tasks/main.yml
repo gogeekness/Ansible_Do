@@ -23,7 +23,7 @@
 - name: Log into DockerHub
   docker_login:
     username: rdeseke
-    password: "{{ Docker_password }}"
+    password: S5CDK5kZ7JzM
     reauthorize: yes
 
 
