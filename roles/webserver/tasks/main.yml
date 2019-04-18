@@ -13,7 +13,11 @@
   pip:  name=docker
 
 
-- name: Is user in group 'docker'
+- name: Add user in group 'docker'
+  user:
+    name: rdeseke
+    groups: docker
+    append: yes
 
 
 - name: Log into DockerHub
