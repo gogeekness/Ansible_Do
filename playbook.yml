@@ -7,7 +7,6 @@
 
   vars_files:
   - ./roles/common/vars/vars_and_stuff.yml
-  - ./roles/common/vars/open_vars.yml
 
   vars:
     ansible_become_pass: "{{ My_password }}"
