@@ -20,12 +20,12 @@
     append: yes
 
 
-- name: Log into DockerHub
-  docker_login:
-    username: rdeseke
-    password: "{{ Docker_password }}"
-    reauthorize: yes
-    debug: yes
+#- name: Log into DockerHub
+#  docker_login:
+#    username: rdeseke
+#    password: "{{ Docker_password }}"
+#    reauthorize: yes
+#    debug: yes
 
 
 - name: Build docker image from Dockerfile
