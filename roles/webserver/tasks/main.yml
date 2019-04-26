@@ -19,7 +19,6 @@
     groups: docker
     append: yes
 
-
 #- name: Log into DockerHub
 #  docker_login:
 #    username: rdeseke
@@ -28,16 +27,20 @@
 #    debug: yes
 
 
+
+
+
 - name: Build docker image from Dockerfile
   docker_image:
     name: web
-    path: /home/rdeseke/Ansible_Do/docker
+    path: /home/rdeseke/
     state: build
 
 - name: Running the container
   docker_container:
+
     image: web:latest
-    path: /home/rdeseke/Ansible_Do/docker
+    path: /home/rdeseke/
     state: running
 
 - name: Check if container is running
