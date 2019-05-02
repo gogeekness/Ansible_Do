@@ -40,7 +40,6 @@
   docker_container:
     name: MyWebApp
     image: web:latest
-    path: /home/rdeseke/
     state: started
     published_ports:
       - "80"
