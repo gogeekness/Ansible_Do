@@ -41,8 +41,6 @@
     name: MyWebApp
     image: web:latest
     state: started
-    published_ports:
-      - "80"
 
 - name: Check if container is running
   shell: docker ps
