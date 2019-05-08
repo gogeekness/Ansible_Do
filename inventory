@@ -1,7 +1,7 @@
 # Hosts file for Ansible
 
 [local]
-# Master 172.18.183.150
+# Master 172.18.183.149
 localhost ansible_connection=local
 
 #Ubuntu test 1
